@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Yield Calculator</title>
+</head>
+<body>
+
+    <header>
+        <h1>Commission Yield Calculator</h1>
+    </header>
+
+    <section>
+        <form>
+            <div>
+                <label for="numCustomers">Enter The Number of Customers Helped Today: </label>
+                <input type="number" id="numCustomers" placeholder="Number">
+            </div>
+            
+            <br/>
+
+            <div>
+                <label for="numCoreSales">Enter Total Core Sales: </label>
+                <input type="number" id="numCoreSales" placeholder="Number">
+            </div>
+            
+            <br/>
+
+            <div>
+                <label for="numMobileSales">Enter Total New Mobile Lines: </label>
+                <input type="number" id="numMobileSales" placeholder="Number">
+            </div>
+        </form>
+
+        <button id="calc">Calculate</button>
+    </section>
+
+    <section class="results">
+        <h1>Today's Yield</h1>
+        <h2 id="amount"></h2>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
